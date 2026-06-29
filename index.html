@@ -32,8 +32,6 @@ body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--
 .body{padding:2rem 2.5rem;max-width:1060px;}
 .tab-panel{display:none;}
 .tab-panel.active{display:block;}
-
-/* IMPORT */
 .import-box{border:2px dashed var(--paper-dark);border-radius:var(--radius);padding:2.5rem;text-align:center;margin-bottom:1.5rem;transition:border-color .2s;cursor:pointer;}
 .import-box:hover,.import-box.drag{border-color:var(--ink-mid);}
 .import-box input[type=file]{display:none;}
@@ -43,18 +41,16 @@ body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--
 .paste-area{width:100%;min-height:120px;border:var(--rule);border-radius:var(--radius);padding:10px 12px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink);background:white;resize:vertical;outline:none;}
 .paste-area:focus{border-color:var(--ink-mid);}
 .btn-main{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;padding:9px 22px;border-radius:4px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;transition:all .15s;}
-.btn-main:hover{background:var(--ink-mid);border-color:var(--ink-mid);}
+.btn-main:hover{background:var(--ink-mid);}
 .btn-outline{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;padding:9px 22px;border-radius:4px;border:1.5px solid var(--paper-dark);background:transparent;color:var(--ink-mid);cursor:pointer;transition:all .15s;}
 .btn-outline:hover{border-color:var(--ink-mid);color:var(--ink);}
-.btn-sm{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;padding:3px 10px;border-radius:3px;border:1px solid var(--paper-dark);background:white;cursor:pointer;color:var(--ink-mid);transition:all .15s;}
+.btn-sm{font-family:'IBM Plex Mono',monospace;font-size:10px;padding:3px 10px;border-radius:3px;border:1px solid var(--paper-dark);background:white;cursor:pointer;color:var(--ink-mid);transition:all .15s;}
 .btn-sm:hover{border-color:var(--ink-mid);color:var(--ink);}
 .btn-sm.ok{border-color:var(--green);color:var(--green);}
 .btn-sm.ok:hover{background:var(--green-bg);}
 .btn-sm.flag-btn{border-color:var(--red);color:var(--red);}
 .btn-sm.flag-btn:hover{background:var(--red-bg);}
-.info-note{font-size:12px;color:var(--ink-light);background:var(--paper-mid);border-radius:4px;padding:8px 12px;margin-bottom:1rem;font-family:'IBM Plex Mono',monospace;line-height:1.6;}
-
-/* METRICS */
+.info-note{font-size:12px;color:var(--ink-light);background:var(--paper-mid);border-radius:4px;padding:8px 12px;margin-bottom:1rem;font-family:'IBM Plex Mono',monospace;line-height:1.7;}
 .summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:2rem;}
 .metric{background:white;border:var(--rule);border-radius:var(--radius);padding:12px 14px;}
 .metric-label{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.12em;color:var(--ink-light);text-transform:uppercase;margin-bottom:4px;}
@@ -64,15 +60,11 @@ body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--
 .metric-value.amber{color:var(--amber);}
 .metric-value.purple{color:var(--purple);}
 .metric-value.teal{color:var(--teal);}
-
-/* CARDS & SECTIONS */
 .section{margin-bottom:2rem;}
 .section-header{display:flex;align-items:baseline;gap:10px;margin-bottom:10px;padding-bottom:8px;border-bottom:var(--rule);}
 .section-title{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mid);}
 .flag-count{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-light);margin-left:auto;}
 .card-wrap{background:white;border:var(--rule);border-radius:var(--radius);overflow:hidden;margin-bottom:1rem;}
-
-/* FLAGS */
 .flag-row{background:white;border:var(--rule);border-radius:var(--radius);padding:12px 14px;margin-bottom:6px;display:grid;grid-template-columns:1fr auto;gap:4px 12px;}
 .flag-row.sev-red{border-left:3px solid var(--red);}
 .flag-row.sev-amber{border-left:3px solid #EF9F27;}
@@ -84,44 +76,35 @@ body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--
 .badge-amber{background:var(--amber-bg);color:var(--amber);}
 .badge-blue{background:var(--blue-bg);color:var(--blue);}
 .badge-green{background:var(--green-bg);color:var(--green);}
-.badge-purple{background:var(--purple-bg);color:var(--purple);}
 .flag-actions{display:flex;gap:6px;margin-top:8px;grid-column:1/-1;flex-wrap:wrap;}
 .flag-note{font-family:'IBM Plex Mono',monospace;font-size:11px;width:100%;border:var(--rule);border-radius:4px;padding:5px 8px;background:var(--paper);color:var(--ink);outline:none;display:none;margin-top:4px;resize:vertical;min-height:36px;}
 .flag-note.show{display:block;}
-
-/* BREAKDOWN TABLE */
 .shift-wrap{overflow-x:auto;}
-.data-table{width:100%;border-collapse:collapse;font-size:12px;min-width:700px;}
+.data-table{width:100%;border-collapse:collapse;font-size:12px;}
 .data-table th{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-light);padding:8px 10px;border-bottom:var(--rule);text-align:left;font-weight:400;white-space:nowrap;}
 .data-table td{padding:8px 10px;border-bottom:var(--rule);vertical-align:middle;}
 .data-table tr:last-child td{border-bottom:none;}
 .data-table tr:hover td{background:var(--paper-mid);}
 .data-table .total-row td{background:var(--paper-mid);font-weight:600;border-top:2px solid var(--paper-dark);}
 .data-table .total-row:hover td{background:var(--paper-mid);}
-.data-table .week-sub{font-size:10px;color:var(--ink-light);font-family:'IBM Plex Mono',monospace;}
+.state-badge{font-family:'IBM Plex Mono',monospace;font-size:9px;padding:2px 6px;border-radius:3px;font-weight:500;letter-spacing:.06em;}
+.sd-badge{background:#e8f0fb;color:#1a4fa8;}
+.ne-badge{background:#fef3e8;color:#b7600a;}
+.drive-badge{background:var(--purple-bg);color:var(--purple);}
+.ot-badge{background:var(--red-bg);color:var(--red);}
+.personal-badge{background:#f0f0f0;color:#666;}
 
-/* OT CHECK TABLE */
-.ot-check-row-ok td{background:var(--green-bg);}
-.ot-check-row-warn td{background:var(--red-bg);}
-.ot-check-row-ok:hover td{background:#dff0e1!important;}
-.ot-check-row-warn:hover td{background:#f9e0de!important;}
-
-/* STATE CARDS */
-.state-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin-bottom:2rem;}
-.state-card{background:white;border:var(--rule);border-radius:var(--radius);overflow:hidden;}
-.state-card-header{padding:10px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;}
-.state-card-header.sd{background:#e8f0fb;color:#1a4fa8;}
-.state-card-header.ne{background:#fef3e8;color:#b7600a;}
-.state-card-header.drive{background:var(--purple-bg);color:var(--purple);}
-.state-card-header.ot{background:var(--red-bg);color:var(--red);}
-.state-card-body{padding:6px 0;}
-.state-row{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;border-bottom:1px solid var(--paper-mid);font-size:12px;}
-.state-row:last-child{border-bottom:none;}
-.state-name{color:var(--ink-mid);}
-.state-hrs{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;}
-.state-total-row{display:flex;justify-content:space-between;padding:8px 14px;background:var(--paper-mid);border-top:var(--rule);}
-.state-total-label{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light);}
-.state-total-val{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:700;}
+/* HOURS SUMMARY TAB */
+.hours-table{width:100%;border-collapse:collapse;font-size:13px;min-width:600px;}
+.hours-table th{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light);padding:10px 14px;border-bottom:2px solid var(--paper-dark);text-align:left;font-weight:400;white-space:nowrap;}
+.hours-table td{padding:10px 14px;border-bottom:var(--rule);vertical-align:middle;}
+.hours-table tr:last-child td{border-bottom:none;}
+.hours-table tr:hover td{background:var(--paper-mid);}
+.hours-table .total-row td{background:var(--ink);color:var(--paper);font-weight:500;border-top:none;}
+.hours-table .total-row:hover td{background:var(--ink-mid);}
+.hours-table .week-header td{background:var(--paper-mid);font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-light);letter-spacing:.1em;padding:6px 14px;border-bottom:var(--rule);}
+.hrs-val{font-family:'IBM Plex Mono',monospace;font-size:13px;}
+.hrs-zero{color:var(--paper-dark);}
 
 /* SHIFTS TABLE */
 .shift-table{width:100%;border-collapse:collapse;font-size:12px;min-width:800px;}
@@ -131,18 +114,26 @@ body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--
 .shift-flag-red{background:#fff8f7;}
 .shift-flag-amber{background:#fffcf5;}
 .shift-drive{background:#f8f4ff;}
+.shift-personal{background:#f5f5f5;}
 .dot{width:7px;height:7px;border-radius:50%;display:inline-block;margin-right:3px;vertical-align:middle;}
 .dot-red{background:var(--red);}
 .dot-amber{background:#EF9F27;}
 .dot-blue{background:var(--blue);}
-.state-badge{font-family:'IBM Plex Mono',monospace;font-size:9px;padding:2px 6px;border-radius:3px;font-weight:500;letter-spacing:.06em;}
-.sd-badge{background:#e8f0fb;color:#1a4fa8;}
-.ne-badge{background:#fef3e8;color:#b7600a;}
-.drive-badge{background:var(--purple-bg);color:var(--purple);}
-.ot-badge{background:var(--red-bg);color:var(--red);}
-.untagged-badge{background:#ffefc2;color:#8a5a00;}
 
-/* CHECKLIST */
+.state-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;}
+.state-card{background:white;border:var(--rule);border-radius:var(--radius);overflow:hidden;}
+.state-card-header{padding:10px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;}
+.state-card-header.sd{background:#e8f0fb;color:#1a4fa8;}
+.state-card-header.ne{background:#fef3e8;color:#b7600a;}
+.state-card-header.drive{background:var(--purple-bg);color:var(--purple);}
+.state-card-header.ot{background:var(--red-bg);color:var(--red);}
+.state-row{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;border-bottom:1px solid var(--paper-mid);font-size:12px;}
+.state-row:last-child{border-bottom:none;}
+.state-name{color:var(--ink-mid);}
+.state-hrs{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;}
+.state-total-row{display:flex;justify-content:space-between;padding:8px 14px;background:var(--paper-mid);border-top:var(--rule);}
+.state-total-label{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light);}
+.state-total-val{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:700;}
 .check-item{display:grid;grid-template-columns:28px 1fr;gap:0 12px;padding:10px 8px;border-bottom:1px solid var(--paper-mid);border-radius:4px;transition:background .1s;}
 .check-item:hover{background:var(--paper-mid);}
 .check-item:last-child{border-bottom:none;}
@@ -190,10 +181,12 @@ body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--
 <div class="tabs">
   <button class="tab active" onclick="switchTab('import')">01 Import</button>
   <button class="tab" onclick="switchTab('flags')">02 Auto-Flags</button>
-  <button class="tab" onclick="switchTab('breakdown')">03 Pay Breakdown</button>
-  <button class="tab" onclick="switchTab('otcheck')">04 OT Check</button>
-  <button class="tab" onclick="switchTab('shifts')">05 All Shifts</button>
-  <button class="tab" onclick="switchTab('checklist')">06 Checklist</button>
+  <button class="tab" onclick="switchTab('hours')">03 Hours Summary</button>
+  <button class="tab" onclick="switchTab('breakdown')">04 Pay Breakdown</button>
+  <button class="tab" onclick="switchTab('otcheck')">05 OT Check</button>
+  <button class="tab" onclick="switchTab('shifts')">06 All Shifts</button>
+  <button class="tab" onclick="switchTab('checklist')">07 Checklist</button>
+  <button class="tab" onclick="switchTab('verify')">08 Verify ✓</button>
 </div>
 
 <div class="body">
@@ -206,7 +199,7 @@ body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--
     <div class="import-sub">or click to browse — accepts .xlsx or .csv</div>
   </div>
   <div class="import-or">── OR PASTE TAB-SEPARATED DATA ──</div>
-  <div style="margin-bottom:6px;font-size:12px;color:var(--ink-light);">Buildertrend → Time Clock → Export → open Excel → select all cells in "All Shifts" sheet → copy → paste below:</div>
+  <div style="margin-bottom:6px;font-size:12px;color:var(--ink-light);">Buildertrend → Time Clock → Export → open Excel → select all in "All Shifts" → copy → paste below:</div>
   <textarea class="paste-area" id="paste-input" placeholder="Paste tab-separated rows here (include the header row)..."></textarea>
   <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;">
     <button class="btn-main" onclick="processPaste()">Import & Analyze</button>
@@ -216,15 +209,17 @@ body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--
   <div style="margin-top:2rem;padding-top:1.5rem;border-top:var(--rule);">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-light);letter-spacing:.1em;margin-bottom:12px;">THRESHOLDS & SETTINGS</div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;background:var(--paper-mid);border-radius:var(--radius);padding:14px 16px;margin-bottom:12px;">
-      <div><label style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-light);letter-spacing:.1em;display:block;margin-bottom:4px;">FLAG SHIFT OVER (hrs)</label><input type="number" id="t-shift" value="10" min="1" max="24" style="border:var(--rule);border-radius:4px;padding:5px 8px;font-family:'IBM Plex Mono',monospace;font-size:13px;background:white;width:100%;outline:none;"></div>
+      <div><label style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-light);letter-spacing:.1em;display:block;margin-bottom:4px;">FLAG SHIFT OVER (hrs)</label><input type="number" id="t-shift" value="12" min="1" max="24" style="border:var(--rule);border-radius:4px;padding:5px 8px;font-family:'IBM Plex Mono',monospace;font-size:13px;background:white;width:100%;outline:none;"></div>
       <div><label style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-light);letter-spacing:.1em;display:block;margin-bottom:4px;">FLAG BREAK UNDER (min)</label><input type="number" id="t-break-min" value="20" min="0" max="120" style="border:var(--rule);border-radius:4px;padding:5px 8px;font-family:'IBM Plex Mono',monospace;font-size:13px;background:white;width:100%;outline:none;"></div>
       <div><label style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-light);letter-spacing:.1em;display:block;margin-bottom:4px;">FLAG BREAK OVER (min)</label><input type="number" id="t-break-max" value="90" min="30" max="240" style="border:var(--rule);border-radius:4px;padding:5px 8px;font-family:'IBM Plex Mono',monospace;font-size:13px;background:white;width:100%;outline:none;"></div>
       <div><label style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-light);letter-spacing:.1em;display:block;margin-bottom:4px;">EXTREME DAY (hrs)</label><input type="number" id="t-extreme" value="14" min="8" max="24" style="border:var(--rule);border-radius:4px;padding:5px 8px;font-family:'IBM Plex Mono',monospace;font-size:13px;background:white;width:100%;outline:none;"></div>
       <div><label style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-light);letter-spacing:.1em;display:block;margin-bottom:4px;">OT THRESHOLD/WEEK (hrs)</label><input type="number" id="t-ot" value="40" min="1" max="60" style="border:var(--rule);border-radius:4px;padding:5px 8px;font-family:'IBM Plex Mono',monospace;font-size:13px;background:white;width:100%;outline:none;"></div>
+      <div><label style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-light);letter-spacing:.1em;display:block;margin-bottom:4px;">PERSONAL DAY UNDER (min)</label><input type="number" id="t-personal" value="5" min="1" max="30" style="border:var(--rule);border-radius:4px;padding:5px 8px;font-family:'IBM Plex Mono',monospace;font-size:13px;background:white;width:100%;outline:none;"></div>
     </div>
     <div class="info-note">
-      STATE DETECTION: jobs containing "SD" → South Dakota · "NE" → Nebraska · "Drive" → Drive time (separate wage, excluded from OT calc)<br>
-      OT RULES: SD + NE hours only, over 40 hrs/week · Untagged hours auto-counted as OT · Drive time never counts toward OT threshold
+      STATE DETECTION: jobs with "SD" → South Dakota · "NE" or "General" → Nebraska (General flagged to fix) · "Drive" → Drive time (separate wage, excluded from OT)<br>
+      OT RULES: SD + NE hours over 40 hrs/week · Drive time does NOT count toward OT · "SD-Administration"/"NE-Administration" = Time off, excluded from all totals<br>
+      PERSONAL DAY: entry under threshold minutes = personal day, not flagged as missing
     </div>
   </div>
 </div>
@@ -234,27 +229,32 @@ body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--
   <div id="flags-content"><div class="empty"><div class="empty-icon">⚑</div><div class="empty-title">No data imported yet</div><div class="empty-sub">Go to Import and paste your Buildertrend export</div></div></div>
 </div>
 
-<!-- ══ TAB 3: PAY BREAKDOWN ══ -->
-<div class="tab-panel" id="tab-breakdown">
-  <div id="breakdown-content"><div class="empty"><div class="empty-icon">📊</div><div class="empty-title">No data imported yet</div></div></div>
+<!-- ══ TAB 3: HOURS SUMMARY ══ -->
+<div class="tab-panel" id="tab-hours">
+  <div id="hours-content"><div class="empty"><div class="empty-icon">📊</div><div class="empty-title">No data imported yet</div></div></div>
 </div>
 
-<!-- ══ TAB 4: OT CHECK ══ -->
+<!-- ══ TAB 4: PAY BREAKDOWN ══ -->
+<div class="tab-panel" id="tab-breakdown">
+  <div id="breakdown-content"><div class="empty"><div class="empty-icon">💵</div><div class="empty-title">No data imported yet</div></div></div>
+</div>
+
+<!-- ══ TAB 5: OT CHECK ══ -->
 <div class="tab-panel" id="tab-otcheck">
   <div id="otcheck-content"><div class="empty"><div class="empty-icon">⏱</div><div class="empty-title">No data imported yet</div></div></div>
 </div>
 
-<!-- ══ TAB 5: ALL SHIFTS ══ -->
+<!-- ══ TAB 6: ALL SHIFTS ══ -->
 <div class="tab-panel" id="tab-shifts">
   <div class="filter-bar">
     <span class="filter-label">FILTER:</span>
     <select id="f-employee" onchange="renderShifts()"><option value="">All employees</option></select>
     <select id="f-state" onchange="renderShifts()">
       <option value="">All types</option>
-      <option value="SD">SD work</option>
-      <option value="NE">NE work</option>
-      <option value="drive">Drive time</option>
-      <option value="other">Untagged</option>
+      <option value="SD">SD</option>
+      <option value="NE">NE</option>
+      <option value="drive">Drive</option>
+      <option value="timeoff">Time Off</option>
     </select>
     <select id="f-flag" onchange="renderShifts()">
       <option value="">All shifts</option>
@@ -266,7 +266,7 @@ body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--
   <div id="shifts-content"><div class="empty"><div class="empty-icon">📋</div><div class="empty-title">No data imported yet</div></div></div>
 </div>
 
-<!-- ══ TAB 6: CHECKLIST ══ -->
+<!-- ══ TAB 7: CHECKLIST ══ -->
 <div class="tab-panel" id="tab-checklist">
   <div class="summary-grid" id="cl-summary" style="display:none;">
     <div class="metric"><div class="metric-label">Total hrs</div><div class="metric-value" id="cl-hours">—</div></div>
@@ -274,7 +274,6 @@ body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--
     <div class="metric"><div class="metric-label">NE hrs</div><div class="metric-value amber" id="cl-ne">—</div></div>
     <div class="metric"><div class="metric-label">Drive hrs</div><div class="metric-value purple" id="cl-drive">—</div></div>
     <div class="metric"><div class="metric-label">Calc OT</div><div class="metric-value red" id="cl-ot">—</div></div>
-    <div class="metric"><div class="metric-label">Untagged</div><div class="metric-value amber" id="cl-untagged">—</div></div>
     <div class="metric"><div class="metric-label">Flags</div><div class="metric-value red" id="cl-flags">—</div></div>
   </div>
   <div id="checklist-content"></div>
@@ -282,6 +281,13 @@ body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--
     <button class="btn-main" onclick="window.print()">Print / Save PDF</button>
     <button class="btn-outline" onclick="resetChecklist()">Reset checklist</button>
     <div class="footer-stamp" id="cl-stamp"></div>
+  </div>
+</div>
+
+<!-- ══ TAB 8: VERIFY ══ -->
+<div class="tab-panel" id="tab-verify">
+  <div id="verify-content">
+    <div class="empty"><div class="empty-icon">🔒</div><div class="empty-title">Complete Run 1 first</div><div class="empty-sub">Import your data, review all tabs, then come back here to lock Run 1 and start verification.</div></div>
   </div>
 </div>
 
@@ -304,48 +310,67 @@ function fmtMins(m){
 }
 function fmtDate(d){
   if(!d) return '—';
-  const s=String(d).split(' ')[0].split('-');
+  const s=String(d).split('T')[0].split(' ')[0].split('-');
   return s.length===3?parseInt(s[1])+'/'+parseInt(s[2])+'/'+s[0].slice(2):d;
 }
+function toDateObj(str){
+  if(!str) return null;
+  // Handle "Thursday, May 14, 2026" style
+  const d=new Date(str);
+  if(!isNaN(d)) return d;
+  return null;
+}
+function dateKey(str){
+  const d=toDateObj(str);
+  if(!d) return null;
+  return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+}
+function getWeekKey(str){
+  const d=toDateObj(str);
+  if(!d) return 'unknown';
+  // ISO week: Monday-based
+  const tmp=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
+  tmp.setUTCDate(tmp.getUTCDate()+4-(tmp.getUTCDay()||7));
+  const yearStart=new Date(Date.UTC(tmp.getUTCFullYear(),0,1));
+  const wk=Math.ceil((((tmp-yearStart)/86400000)+1)/7);
+  return d.getFullYear()+'-W'+String(wk).padStart(2,'0');
+}
 function getState(job){
-  if(!job) return 'other';
+  if(!job) return 'NE';
   const j=String(job).toLowerCase();
   if(j.includes('drive')) return 'drive';
-  if(/ sd[\b\s\-_]|[\-_\s]sd$| sd$|\(sd\)| sd /i.test(' '+j+' ')) return 'SD';
-  if(/ ne[\b\s\-_]|[\-_\s]ne$| ne$|\(ne\)| ne /i.test(' '+j+' ')) return 'NE';
-  // broader fallback
-  if(j.includes('-sd')||j.endsWith(' sd')||j.endsWith('-sd')) return 'SD';
-  if(j.includes('-ne')||j.endsWith(' ne')||j.endsWith('-ne')) return 'NE';
-  return 'other';
+  if(j.match(/\bsd\b|-sd\b|[_\s]sd$/i)||j.includes('-sd')||j.endsWith(' sd')) return 'SD';
+  if(j.match(/\bne\b|-ne\b|[_\s]ne$/i)||j.includes('-ne')||j.endsWith(' ne')) return 'NE';
+  if(j.includes('general')) return 'NE'; // General → NE, flagged separately
+  return 'NE'; // no label at all → default to NE, flagged separately
 }
-function getWeekKey(dateStr){
-  // Returns YYYY-Www so we can group by week
-  try {
-    const d = new Date(dateStr);
-    if(isNaN(d)) return 'unknown';
-    const jan4 = new Date(d.getFullYear(), 0, 4);
-    const startOfWeek = new Date(jan4);
-    startOfWeek.setDate(jan4.getDate() - jan4.getDay() + 1); // Monday
-    const diff = (d - startOfWeek) / 86400000;
-    const week = Math.floor(diff / 7) + 1;
-    return d.getFullYear() + '-W' + String(week).padStart(2,'0');
-  } catch(e) { return 'unknown'; }
+function isGeneral(job){ return job&&String(job).toLowerCase().includes('general'); }
+function isTimeOff(job){
+  if(!job) return false;
+  const j=String(job).trim().toLowerCase();
+  return j==='sd-administration'||j==='ne-administration';
 }
+function isPersonalDay(totalMins){
+  const t=parseInt(document.getElementById('t-personal').value)||5;
+  return totalMins!==null&&totalMins>0&&totalMins<t;
+}
+
+// ── TABS ──
 function switchTab(name){
   document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
-  ['import','flags','breakdown','otcheck','shifts','checklist'].forEach((n,i)=>{
+  ['import','flags','hours','breakdown','otcheck','shifts','checklist','verify'].forEach((n,i)=>{
     if(n===name) document.querySelectorAll('.tab')[i].classList.add('active');
   });
 }
 
-// ── FILE / PASTE ──
+// ── FILE ──
 function handleDrag(e,over){e.preventDefault();document.getElementById('drop-zone').classList.toggle('drag',over);}
 function handleDrop(e){e.preventDefault();handleDrag(e,false);if(e.dataTransfer.files[0])handleFile(e.dataTransfer.files[0]);}
 function handleFile(file){
-  const reader=new FileReader();
-  reader.onload=function(e){
+  const r=new FileReader();
+  r.onload=e=>{
     try{
       const wb=XLSX.read(e.target.result,{type:'binary',cellDates:true});
       const wsName=wb.SheetNames.find(n=>n.toLowerCase().includes('all'))||wb.SheetNames[0];
@@ -353,20 +378,54 @@ function handleFile(file){
       processPaste();
     }catch(err){alert('Could not read file: '+err.message);}
   };
-  reader.readAsBinaryString(file);
+  r.readAsBinaryString(file);
 }
+
+// ── QUOTE-AWARE TSV PARSER ──
+// Buildertrend wraps multi-line "Edited" notes in quotes with embedded newlines.
+// A naive split('\n') breaks those rows apart. This walks character by character
+// so a newline or tab inside a quoted cell doesn't split the row/column.
+function parseTSV(raw){
+  const rows=[];
+  let row=[], cell='', inQuotes=false;
+  for(let i=0;i<raw.length;i++){
+    const c=raw[i], next=raw[i+1];
+    if(inQuotes){
+      if(c==='"'&&next==='"'){ cell+='"'; i++; }
+      else if(c==='"'){ inQuotes=false; }
+      else { cell+=c; }
+    } else {
+      if(c==='"'){ inQuotes=true; }
+      else if(c==='\t'){ row.push(cell); cell=''; }
+      else if(c==='\n'||c==='\r'){
+        if(c==='\r'&&next==='\n') i++; // skip \r\n pair
+        row.push(cell); cell='';
+        rows.push(row); row=[];
+      } else { cell+=c; }
+    }
+  }
+  if(cell!==''||row.length){ row.push(cell); rows.push(row); }
+  return rows.filter(r=>r.some(c=>c.trim()!==''));
+}
+
+// ── PARSE ──
 function processPaste(){
   const raw=document.getElementById('paste-input').value.trim();
   if(!raw){alert('Nothing to import.');return;}
-  const lines=raw.split('\n').map(l=>l.split('\t'));
+  const lines=parseTSV(raw);
   let hi=-1;
-  for(let i=0;i<Math.min(6,lines.length);i++){if(lines[i].some(c=>c.trim().toLowerCase()==='name')){hi=i;break;}}
-  if(hi<0){alert('Could not find header row with "Name".');return;}
-  const h=lines[hi].map(c=>c.trim().toLowerCase());
-  const c=n=>h.indexOf(n);
-  const iDate=c('date'),iName=c('name'),iJob=c('job'),iIn=c('time in'),iOut=c('time out'),
-        iBreak=c('break time'),iReg=c('regular time'),iOT=c('ot'),iTotal=c('total work time'),
-        iEdited=c('edited'),iNotes=c('notes'),iStatus=c('approved status');
+  for(let i=0;i<Math.min(15,lines.length);i++){
+    if(lines[i].some(c=>{const t=c.replace(/[\u200B-\u200D\uFEFF]/g,'').trim().toLowerCase();return t==='name'||t==='full name';})){hi=i;break;}
+  }
+  if(hi<0){
+    alert('Could not find a column header named "Name" in the first 15 rows.\n\nMake sure you copied starting from the row with column titles (Date, Job, Name, Tags...) — not the "Time Clock (exported on...)" title line above it, and not a row that starts mid-table.');
+    return;
+  }
+  const h=lines[hi].map(c=>c.replace(/[\u200B-\u200D\uFEFF]/g,'').trim().toLowerCase());
+  const col=n=>h.indexOf(n);
+  const iDate=col('date'),iName=col('name')>=0?col('name'):col('full name'),iJob=col('job'),iIn=col('time in'),iOut=col('time out'),
+        iBreak=col('break time'),iReg=col('regular time'),iOT=col('ot'),iTotal=col('total work time'),
+        iEdited=col('edited'),iNotes=col('notes'),iStatus=col('approved status');
   shifts=[];
   for(let i=hi+1;i<lines.length;i++){
     const row=lines[i];
@@ -374,27 +433,33 @@ function processPaste(){
     const name=row[iName].trim();
     if(!name||name.match(/^\d+:\d+$/)||name.toLowerCase()==='total') continue;
     const job=iJob>=0?(row[iJob]||'').trim():'';
+    const rawDate=row[iDate]?row[iDate].trim():'';
+    const totalMins=parseHHMM(iTotal>=0?row[iTotal]:null);
     shifts.push({
-      date:row[iDate]?row[iDate].trim():'',
+      date:rawDate,
+      dateKey:dateKey(rawDate),
+      weekKey:getWeekKey(rawDate),
       name,job,
       state:getState(job),
-      weekKey:getWeekKey(row[iDate]?row[iDate].trim():''),
+      isPersonal:isPersonalDay(totalMins),
+      isTimeOff:isTimeOff(job),
       timeIn:iIn>=0?(row[iIn]||'').trim():'',
       timeOut:iOut>=0?(row[iOut]||'').trim():'',
       breakMins:parseHHMM(iBreak>=0?row[iBreak]:null),
       regMins:parseHHMM(iReg>=0?row[iReg]:null),
       otMinsReported:parseHHMM(iOT>=0?row[iOT]:null),
-      totalMins:parseHHMM(iTotal>=0?row[iTotal]:null),
+      totalMins,
       edited:iEdited>=0?(row[iEdited]||'').trim():'',
       notes:iNotes>=0?(row[iNotes]||'').trim():'',
       status:iStatus>=0?(row[iStatus]||'').trim():'',
     });
   }
-  if(!shifts.length){alert('No shifts found. Make sure you include the header row.');return;}
+  if(!shifts.length){alert('No shifts found. Include the header row when pasting.');return;}
   computeOT();
   analyzeFlags();
   populateFilters();
   renderFlags();
+  renderHours();
   renderBreakdown();
   renderOTCheck();
   renderShifts();
@@ -402,45 +467,55 @@ function processPaste(){
   updateProgress();
   const st=document.getElementById('import-status');
   st.style.display='block';
-  st.textContent='✓ Imported '+shifts.length+' shifts for '+[...new Set(shifts.map(s=>s.name))].length+' employees — go to OT Check to verify overtime.';
-  switchTab('otcheck');
+  st.textContent='✓ Imported '+shifts.length+' shifts for '+[...new Set(shifts.map(s=>s.name))].length+' employees.';
+  renderVerifyTab();
+  switchTab('hours');
 }
 
-// ── OT CALCULATION ──
-// Rules: SD+NE+untagged count toward 40hr threshold. Drive never counts.
-// Untagged hours are auto-treated as OT.
-// Weekly: for each employee, each week, sum SD+NE hours. Hours over 40 = OT.
-// Untagged hours are added on top as OT.
+// ── OT CALC: SD+NE over 40/week. Drive and Time Off excluded from OT and totals. ──
 function computeOT(){
   empOT={};
   const names=[...new Set(shifts.map(s=>s.name))];
+  const tOT=parseInt(document.getElementById('t-ot').value)*60;
   names.forEach(name=>{
-    const empShifts=shifts.filter(s=>s.name===name);
-    const weeks=[...new Set(empShifts.map(s=>s.weekKey))];
-    let totalCalcOT=0, totalUntagged=0, weekDetail=[];
+    const es=shifts.filter(s=>s.name===name&&!s.isTimeOff);
+    const timeOffEntries=shifts.filter(s=>s.name===name&&s.isTimeOff);
+    const timeOffDays=timeOffEntries.length;
+    const timeOffDates=timeOffEntries.map(s=>s.date);
+    const weeks=[...new Set(es.map(s=>s.weekKey))].filter(w=>w!=='unknown');
+    let totalCalcOT=0, totalSDOT=0, totalNEOT=0;
+    const weekDetail=[];
     weeks.forEach(wk=>{
-      const wShifts=empShifts.filter(s=>s.weekKey===wk);
-      const sdne=wShifts.filter(s=>s.state==='SD'||s.state==='NE').reduce((a,s)=>a+(s.totalMins||0),0);
-      const untagged=wShifts.filter(s=>s.state==='other').reduce((a,s)=>a+(s.totalMins||0),0);
-      const drive=wShifts.filter(s=>s.state==='drive').reduce((a,s)=>a+(s.totalMins||0),0);
-      const tOT=parseInt(document.getElementById('t-ot').value)*60;
-      const regularOT=Math.max(0,sdne-tOT);
-      const calcOT=regularOT+untagged; // untagged always OT
+      const ws=es.filter(s=>s.weekKey===wk);
+      const sdMins=ws.filter(s=>s.state==='SD'&&!s.isPersonal).reduce((a,s)=>a+(s.totalMins||0),0);
+      const neMins=ws.filter(s=>s.state==='NE'&&!s.isPersonal).reduce((a,s)=>a+(s.totalMins||0),0);
+      const sdne=sdMins+neMins;
+      const drive=ws.filter(s=>s.state==='drive').reduce((a,s)=>a+(s.totalMins||0),0);
+      const calcOT=Math.max(0,sdne-tOT);
+      // Split OT proportionally between SD and NE based on each state's share of SD+NE hours that week
+      let sdOT=0, neOT=0;
+      if(calcOT>0&&sdne>0){
+        sdOT=Math.round(calcOT*(sdMins/sdne));
+        neOT=calcOT-sdOT;
+      }
       totalCalcOT+=calcOT;
-      totalUntagged+=untagged;
-      weekDetail.push({wk,sdne,untagged,drive,regularOT,calcOT});
+      totalSDOT+=sdOT;
+      totalNEOT+=neOT;
+      weekDetail.push({wk,sdMins,neMins,sdne,drive,calcOT,sdOT,neOT});
     });
-    const sd=empShifts.filter(s=>s.state==='SD').reduce((a,s)=>a+(s.totalMins||0),0);
-    const ne=empShifts.filter(s=>s.state==='NE').reduce((a,s)=>a+(s.totalMins||0),0);
-    const drive=empShifts.filter(s=>s.state==='drive').reduce((a,s)=>a+(s.totalMins||0),0);
-    const other=empShifts.filter(s=>s.state==='other').reduce((a,s)=>a+(s.totalMins||0),0);
-    const reportedOT=empShifts.reduce((a,s)=>a+(s.otMinsReported||0),0);
-    empOT[name]={sd,ne,drive,other,reportedOT,calcOT:totalCalcOT,untagged:totalUntagged,weekDetail,total:sd+ne+drive+other};
+    const sd=es.filter(s=>s.state==='SD'&&!s.isPersonal).reduce((a,s)=>a+(s.totalMins||0),0);
+    const ne=es.filter(s=>s.state==='NE'&&!s.isPersonal).reduce((a,s)=>a+(s.totalMins||0),0);
+    const drive=es.filter(s=>s.state==='drive').reduce((a,s)=>a+(s.totalMins||0),0);
+    const reportedOT=es.reduce((a,s)=>a+(s.otMinsReported||0),0);
+    // Grand Total = SD + NE + Drive. OT hours are already part of SD/NE totals (not separate), so this isn't double counting.
+    const total=sd+ne+drive;
+    empOT[name]={sd,ne,drive,reportedOT,calcOT:totalCalcOT,sdOT:totalSDOT,neOT:totalNEOT,weekDetail,total,timeOffDays,timeOffDates};
   });
 }
 
-// ── FLAG ENGINE ──
+// ── FLAGS ──
 function shiftIsFlagged(s){
+  if(s.isPersonal||s.isTimeOff) return false;
   const tS=parseInt(document.getElementById('t-shift').value)*60;
   const tBmin=parseInt(document.getElementById('t-break-min').value);
   const tBmax=parseInt(document.getElementById('t-break-max').value);
@@ -449,49 +524,105 @@ function shiftIsFlagged(s){
   if(s.totalMins!==null&&s.totalMins>=480&&s.breakMins!==null&&s.breakMins<tBmin) return true;
   if(s.breakMins!==null&&s.breakMins>tBmax) return true;
   if(s.edited&&s.edited.length>2) return true;
-  if(s.state==='other') return true; // untagged = flag
+  if(isGeneral(s.job)&&s.totalMins>0) return true;
   return false;
 }
+
 function analyzeFlags(){
   const tS=parseInt(document.getElementById('t-shift').value)*60;
   const tBmin=parseInt(document.getElementById('t-break-min').value);
   const tBmax=parseInt(document.getElementById('t-break-max').value);
   const tEx=parseInt(document.getElementById('t-extreme').value)*60;
   flags=[];
+
   shifts.forEach((s,idx)=>{
+    if(s.isPersonal) return; // skip personal day entries
+    if(s.isTimeOff){
+      flags.push({sev:'blue',name:s.name,date:s.date,job:s.job,label:'Time off — '+fmtMins(s.totalMins||0),detail:'Job: "'+s.job+'" — excluded from all hour totals.',shiftIdx:idx});
+      return;
+    }
     const total=s.totalMins,brk=s.breakMins,edited=s.edited&&s.edited.length>2;
-    if(total!==null&&total>=tEx) flags.push({sev:'red',name:s.name,date:s.date,job:s.job,label:'Extreme shift — '+fmtMins(total)+' hrs',detail:s.timeIn+' – '+s.timeOut+(brk===null?', no break':' break: '+fmtMins(brk)),shiftIdx:idx});
-    else if(total!==null&&total>=tS) flags.push({sev:'amber',name:s.name,date:s.date,job:s.job,label:'Long shift — '+fmtMins(total)+' hrs',detail:s.timeIn+' – '+s.timeOut+(brk===null?', no break':' break: '+fmtMins(brk)),shiftIdx:idx});
-    if(total!==null&&total>=360&&brk===null&&s.state!=='drive') flags.push({sev:'amber',name:s.name,date:s.date,job:s.job,label:'No break on '+fmtMins(total)+'-hr shift',detail:'Verify a break was actually taken',shiftIdx:idx});
+    if(total!==null&&total>=tEx) flags.push({sev:'red',name:s.name,date:s.date,job:s.job,label:'Extreme shift — '+fmtMins(total)+' hrs',detail:s.timeIn+' – '+s.timeOut+(brk===null?', no break':' · break: '+fmtMins(brk)),shiftIdx:idx});
+    else if(total!==null&&total>=tS) flags.push({sev:'amber',name:s.name,date:s.date,job:s.job,label:'Long shift — '+fmtMins(total)+' hrs',detail:s.timeIn+' – '+s.timeOut+(brk===null?', no break':' · break: '+fmtMins(brk)),shiftIdx:idx});
+    if(total!==null&&total>=360&&brk===null&&s.state!=='drive') flags.push({sev:'amber',name:s.name,date:s.date,job:s.job,label:'No break on '+fmtMins(total)+'-hr shift',detail:'Shifts over 6 hrs with no break should be confirmed',shiftIdx:idx});
     if(total!==null&&total>=480&&brk!==null&&brk<tBmin) flags.push({sev:'amber',name:s.name,date:s.date,job:s.job,label:'Break under '+tBmin+' min on long shift',detail:'Break: '+fmtMins(brk)+' on a '+fmtMins(total)+'-hr day',shiftIdx:idx});
     if(brk!==null&&brk>tBmax) flags.push({sev:'red',name:s.name,date:s.date,job:s.job,label:'Break over '+tBmax+' min — verify',detail:'Break: '+fmtMins(brk)+'. May be missed clock-in — reduces paid hours.',shiftIdx:idx});
-    if(s.state==='other'&&total&&total>0) flags.push({sev:'amber',name:s.name,date:s.date,job:s.job,label:'Untagged job — '+fmtMins(total)+' hrs counted as OT',detail:'Job: "'+s.job+'" has no SD or NE label. Hours auto-added to OT.',shiftIdx:idx});
+    if(isGeneral(s.job)&&total>0) flags.push({sev:'amber',name:s.name,date:s.date,job:s.job,label:'General job — update to real job code',detail:'Job: "'+s.job+'" counted as NE for now. Assign to a specific job in Buildertrend.',shiftIdx:idx});
     if(edited){const self=s.edited.toLowerCase().includes(s.name.split(' ')[0].toLowerCase());flags.push({sev:'blue',name:s.name,date:s.date,job:s.job,label:(self?'Self-modified entry':'Entry modified by third party'),detail:s.edited,shiftIdx:idx});}
   });
-  // OT discrepancy flag
+
+  // ── MISSING WEEKDAYS ──
+  const allDKeys=shifts.filter(s=>s.name&&s.dateKey).map(s=>s.dateKey);
+  if(allDKeys.length){
+    const sorted=[...new Set(allDKeys)].sort();
+    const startD=new Date(sorted[0]+'T12:00:00');
+    const endD=new Date(sorted[sorted.length-1]+'T12:00:00');
+    // Only flag real employees — must have at least 2 shifts total
+    const names=[...new Set(shifts.map(s=>s.name))].filter(n=>shifts.filter(s=>s.name===n).length>=2);
+    const workedDays={};
+    names.forEach(n=>{workedDays[n]=new Set(shifts.filter(s=>s.name===n&&s.dateKey).map(s=>s.dateKey));});
+    const cur=new Date(startD);
+    while(cur<=endD){
+      const dow=cur.getDay();
+      if(dow>=1&&dow<=5){
+        const dk=cur.getFullYear()+'-'+String(cur.getMonth()+1).padStart(2,'0')+'-'+String(cur.getDate()).padStart(2,'0');
+        const label=cur.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
+        names.forEach(n=>{
+          if(!workedDays[n].has(dk)){
+            flags.push({sev:'blue',name:n,date:dk,job:'',label:'No hours — '+label,detail:'No entry this weekday. Confirm: day off, personal day missing, or forgot to clock in.',shiftIdx:-1});
+          }
+        });
+      }
+      cur.setDate(cur.getDate()+1);
+    }
+  }
+
+  // OT discrepancy — only flag if BT reported OT AND it differs from calculated
   Object.entries(empOT).forEach(([name,e])=>{
     if(e.reportedOT>0&&Math.abs(e.reportedOT-e.calcOT)>15){
-      flags.push({sev:'red',name,date:'',job:'',label:'OT discrepancy — Buildertrend vs calculated',detail:'Buildertrend shows '+fmtMins(e.reportedOT)+' OT · This tool calculates '+fmtMins(e.calcOT)+' OT. Verify before paying.',shiftIdx:-1});
-    }
-    if(e.reportedOT===0&&e.calcOT>0){
-      flags.push({sev:'red',name,date:'',job:'',label:'OT not recorded — '+fmtMins(e.calcOT)+' hrs calculated',detail:'Buildertrend shows 0 OT but this tool calculates '+fmtMins(e.calcOT)+' hrs OT ('+fmtMins(e.untagged)+' untagged + weekly threshold). Verify.',shiftIdx:-1});
+      flags.push({sev:'red',name,date:'',job:'',label:'OT discrepancy',detail:'Buildertrend: '+fmtMins(e.reportedOT)+' · Calculated: '+fmtMins(e.calcOT)+'. Verify before paying.',shiftIdx:-1});
     }
   });
 }
 
 function renderFlags(){
   if(!flags.length){document.getElementById('flags-content').innerHTML='<div class="empty"><div class="empty-icon">✓</div><div class="empty-title">No flags</div></div>';return;}
-  const red=flags.filter(f=>f.sev==='red'),amber=flags.filter(f=>f.sev==='amber'),blue=flags.filter(f=>f.sev==='blue');
+  const timeoff=flags.filter(f=>f.label.startsWith('Time off'));
+  const missing=flags.filter(f=>f.sev==='blue'&&f.label.startsWith('No hours'));
+  const red=flags.filter(f=>f.sev==='red');
+  const amber=flags.filter(f=>f.sev==='amber');
+  const blue=flags.filter(f=>f.sev==='blue'&&!f.label.startsWith('No hours')&&!f.label.startsWith('Time off'));
   let html=`<div class="summary-grid">
     <div class="metric"><div class="metric-label">Shifts</div><div class="metric-value">${shifts.length}</div></div>
+    <div class="metric"><div class="metric-label">Time off</div><div class="metric-value" style="color:#2d7a3a;">${timeoff.length}</div></div>
+    <div class="metric"><div class="metric-label">Missing days</div><div class="metric-value" style="color:var(--blue)">${missing.length}</div></div>
     <div class="metric"><div class="metric-label">High priority</div><div class="metric-value red">${red.length}</div></div>
     <div class="metric"><div class="metric-label">Review</div><div class="metric-value amber">${amber.length}</div></div>
-    <div class="metric"><div class="metric-label">Info</div><div class="metric-value" style="color:var(--blue)">${blue.length}</div></div>
   </div>`;
-  const rg=(title,group)=>{
-    if(!group.length) return '';
-    return `<div class="section"><div class="section-header"><span class="section-title">${title}</span><span class="flag-count">${group.length}</span></div><div class="card-wrap">`+
-    group.map(f=>`<div class="flag-row sev-${f.sev}">
+
+  // ── DEDICATED TIME OFF SECTION — high visibility, grid layout for quick scanning ──
+  if(timeoff.length){
+    html+=`<div class="section">
+      <div class="section-header" style="border-bottom:2px solid #2d7a3a;">
+        <span class="section-title" style="color:#2d7a3a;">🟢 Who's off this period</span>
+        <span class="flag-count" style="color:#2d7a3a;font-weight:600;">${timeoff.length}</span>
+      </div>
+      <div class="card-wrap" style="background:#f0f9f1;border-color:#a8d8b0;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;padding:14px;">`;
+    timeoff.forEach(f=>{
+      html+=`<div style="background:white;border:1px solid #a8d8b0;border-radius:6px;padding:10px 12px;">
+        <div style="font-size:13px;font-weight:600;color:var(--ink);">${f.name}</div>
+        <div style="font-size:12px;color:#2d7a3a;font-family:'IBM Plex Mono',monospace;margin-top:2px;">${fmtDate(f.date)}</div>
+        <div style="font-size:11px;color:var(--ink-light);margin-top:2px;">${f.job}</div>
+      </div>`;
+    });
+    html+=`</div></div></div>`;
+  }
+
+  const rg=(title,grp)=>{
+    if(!grp.length) return '';
+    return `<div class="section"><div class="section-header"><span class="section-title">${title}</span><span class="flag-count">${grp.length}</span></div><div class="card-wrap">`+
+    grp.map(f=>`<div class="flag-row sev-${f.sev}">
       <div class="flag-name">${f.name}${f.date?' — '+fmtDate(f.date):''}${f.job?' <span style="font-weight:300;color:var(--ink-light);font-size:11px;">· '+f.job+'</span>':''}</div>
       <span class="badge badge-${f.sev}">${f.label}</span>
       <div class="flag-detail">${f.detail}</div>
@@ -503,34 +634,125 @@ function renderFlags(){
       <textarea class="flag-note" placeholder="Add a note..."></textarea>
     </div>`).join('')+'</div></div>';
   };
+  html+=rg('Missing weekdays — confirm or clear',missing);
   html+=rg('High priority — verify before approving',red);
   html+=rg('Review items',amber);
-  html+=rg('Info / self-edits',blue);
+  html+=rg('Self-edits / info',blue);
   document.getElementById('flags-content').innerHTML=html;
 }
 function resolveFlag(btn,s){btn.closest('.flag-row').style.opacity=s==='ok'?'0.45':'1';updateProgress();}
 function toggleFN(btn){const n=btn.closest('.flag-row').querySelector('.flag-note');n.classList.toggle('show');if(n.classList.contains('show'))n.focus();}
 
+// ── HOURS SUMMARY TAB ──
+function renderHours(){
+  const names=[...new Set(shifts.map(s=>s.name))].sort();
+  const tOTval=document.getElementById('t-ot').value;
+
+  // Period totals
+  let pSD=0,pNE=0,pDrive=0,pSDOT=0,pNEOT=0,pTotal=0;
+  names.forEach(n=>{const e=empOT[n];pSD+=e.sd;pNE+=e.ne;pDrive+=e.drive;pSDOT+=e.sdOT;pNEOT+=e.neOT;pTotal+=e.total;});
+  const pOT=pSDOT+pNEOT;
+
+  let html=`
+  <div class="info-note">
+    Grand Total = SD hrs + NE hrs + Drive hrs — OT hours are already included inside SD/NE totals, so this isn't double-counted<br>
+    OT = SD+NE combined hours over ${tOTval} hrs/week, split proportionally between SD and NE based on hours worked in each that week
+  </div>
+  <div class="summary-grid">
+    <div class="metric"><div class="metric-label">Total SD</div><div class="metric-value teal">${fmtMins(pSD)}</div></div>
+    <div class="metric"><div class="metric-label">Total NE</div><div class="metric-value amber">${fmtMins(pNE)}</div></div>
+    <div class="metric"><div class="metric-label">Total Drive</div><div class="metric-value purple">${fmtMins(pDrive)}</div></div>
+    <div class="metric"><div class="metric-label">SD OT</div><div class="metric-value red">${pSDOT>0?fmtMins(pSDOT):'—'}</div></div>
+    <div class="metric"><div class="metric-label">NE OT</div><div class="metric-value red">${pNEOT>0?fmtMins(pNEOT):'—'}</div></div>
+    <div class="metric"><div class="metric-label">Grand Total</div><div class="metric-value">${fmtMins(pTotal)}</div></div>
+  </div>
+  <div class="section"><div class="section-header"><span class="section-title">Hours by employee</span></div>
+  <div class="card-wrap"><div class="shift-wrap"><table class="hours-table">
+    <thead><tr>
+      <th>Employee</th>
+      <th style="color:var(--teal);">SD hrs</th>
+      <th style="color:var(--amber);">NE hrs</th>
+      <th style="color:var(--purple);">Drive hrs</th>
+      <th style="color:var(--red);">SD OT</th>
+      <th style="color:var(--red);">NE OT</th>
+      <th style="background:var(--ink);color:var(--paper);">Grand Total</th>
+    </tr></thead><tbody>`;
+
+  names.forEach(name=>{
+    const e=empOT[name];
+    html+=`<tr>
+      <td style="font-weight:500;">${name}</td>
+      <td><span class="hrs-val ${e.sd===0?'hrs-zero':''}" style="${e.sd>0?'color:var(--teal);':''}">${fmtMins(e.sd)}</span></td>
+      <td><span class="hrs-val ${e.ne===0?'hrs-zero':''}" style="${e.ne>0?'color:var(--amber);':''}">${fmtMins(e.ne)}</span></td>
+      <td><span class="hrs-val ${e.drive===0?'hrs-zero':''}" style="${e.drive>0?'color:var(--purple);':''}">${fmtMins(e.drive)}</span></td>
+      <td><span class="hrs-val" style="${e.sdOT>0?'color:var(--red);font-weight:600;':'color:var(--paper-dark);'}">${e.sdOT>0?fmtMins(e.sdOT):'—'}</span></td>
+      <td><span class="hrs-val" style="${e.neOT>0?'color:var(--red);font-weight:600;':'color:var(--paper-dark);'}">${e.neOT>0?fmtMins(e.neOT):'—'}</span></td>
+      <td style="font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:14px;background:var(--paper-mid);">${fmtMins(e.total)}</td>
+    </tr>`;
+  });
+
+  html+=`<tr class="total-row">
+    <td>PERIOD TOTAL</td>
+    <td>${fmtMins(pSD)}</td>
+    <td>${fmtMins(pNE)}</td>
+    <td>${fmtMins(pDrive)}</td>
+    <td>${pSDOT>0?fmtMins(pSDOT):'—'}</td>
+    <td>${pNEOT>0?fmtMins(pNEOT):'—'}</td>
+    <td>${fmtMins(pTotal)}</td>
+  </tr></tbody></table></div></div></div>`;
+
+  // Weekly breakdown per employee
+  html+=`<div class="section"><div class="section-header"><span class="section-title">Weekly breakdown per employee</span></div>`;
+  names.forEach(name=>{
+    const e=empOT[name];
+    if(!e.weekDetail.length) return;
+    html+=`<div style="margin-bottom:1rem;"><div style="font-size:12px;font-weight:500;margin-bottom:6px;color:var(--ink-mid);">${name}</div>
+    <div class="card-wrap"><table class="hours-table" style="min-width:560px;">
+      <thead><tr><th>Week</th><th style="color:var(--teal);">SD</th><th style="color:var(--amber);">NE</th><th style="color:var(--purple);">Drive</th><th style="color:var(--red);">SD OT</th><th style="color:var(--red);">NE OT</th></tr></thead>
+      <tbody>`;
+    e.weekDetail.forEach(wd=>{
+      html+=`<tr>
+        <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;">${wd.wk}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;${wd.sdMins>0?'color:var(--teal);':''}">${wd.sdMins>0?fmtMins(wd.sdMins):'—'}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;${wd.neMins>0?'color:var(--amber);':''}">${wd.neMins>0?fmtMins(wd.neMins):'—'}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;${wd.drive>0?'color:var(--purple);':''}">${wd.drive>0?fmtMins(wd.drive):'—'}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;font-weight:600;${wd.sdOT>0?'color:var(--red);':''}">${wd.sdOT>0?fmtMins(wd.sdOT):'—'}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;font-weight:600;${wd.neOT>0?'color:var(--red);':''}">${wd.neOT>0?fmtMins(wd.neOT):'—'}</td>
+      </tr>`;
+    });
+    html+=`</tbody></table></div></div>`;
+  });
+  html+=`</div>`;
+
+  document.getElementById('hours-content').innerHTML=html;
+
+  // Update checklist summary bar
+  document.getElementById('cl-hours').textContent=fmtMins(pSD+pNE+pDrive);
+  document.getElementById('cl-sd').textContent=fmtMins(pSD);
+  document.getElementById('cl-ne').textContent=fmtMins(pNE);
+  document.getElementById('cl-drive').textContent=fmtMins(pDrive);
+  document.getElementById('cl-ot').textContent=pOT?fmtMins(pOT):'—';
+  document.getElementById('cl-flags').textContent=flags.length;
+  document.getElementById('cl-summary').style.display='grid';
+}
+
 // ── PAY BREAKDOWN ──
 function renderBreakdown(){
   const names=[...new Set(shifts.map(s=>s.name))].sort();
-  let totalSD=0,totalNE=0,totalDrive=0,totalOther=0,totalCalcOT=0;
-  names.forEach(n=>{const e=empOT[n];totalSD+=e.sd;totalNE+=e.ne;totalDrive+=e.drive;totalOther+=e.other;totalCalcOT+=e.calcOT;});
-  const grand=totalSD+totalNE+totalDrive+totalOther;
+  let totalSD=0,totalNE=0,totalDrive=0,totalCalcOT=0;
+  names.forEach(n=>{const e=empOT[n];totalSD+=e.sd;totalNE+=e.ne;totalDrive+=e.drive;totalCalcOT+=e.calcOT;});
+  const grand=totalSD+totalNE+totalDrive;
 
-  let html=`<div class="info-note">OT = SD+NE hours over 40 hrs/week + all untagged hours. Drive time excluded from OT calc but paid at separate rate.</div>`;
-
-  html+=`<div class="section"><div class="section-header"><span class="section-title">Per-employee pay breakdown</span></div>
-  <div class="card-wrap"><div class="shift-wrap"><table class="data-table">
+  let html=`<div class="info-note">Drive time paid at separate rate · OT = SD+NE over 40 hrs/week · "SD/NE-Administration" = time off, excluded from all totals · General jobs counted as NE, flagged to fix</div>`;
+  html+=`<div class="section"><div class="section-header"><span class="section-title">Per-employee wage breakdown</span></div>
+  <div class="card-wrap"><div class="shift-wrap"><table class="data-table" style="min-width:700px;">
     <thead><tr>
       <th>Employee</th>
       <th><span class="state-badge sd-badge">SD</span> Hrs</th>
       <th><span class="state-badge ne-badge">NE</span> Hrs</th>
       <th><span class="state-badge drive-badge">Drive</span> Hrs</th>
-      <th><span class="state-badge untagged-badge">Untagged→OT</span></th>
       <th><span class="state-badge ot-badge">Calc OT</span></th>
-      <th>Total Hrs</th>
-      <th>Flags</th>
+      <th>Total</th><th>Time Off</th><th>Flags</th>
     </tr></thead><tbody>`;
   names.forEach(name=>{
     const e=empOT[name];
@@ -540,106 +762,76 @@ function renderBreakdown(){
       <td style="font-family:'IBM Plex Mono',monospace;${e.sd>0?'color:var(--teal);font-weight:500;':''}">${e.sd>0?fmtMins(e.sd):'—'}</td>
       <td style="font-family:'IBM Plex Mono',monospace;${e.ne>0?'color:var(--amber);font-weight:500;':''}">${e.ne>0?fmtMins(e.ne):'—'}</td>
       <td style="font-family:'IBM Plex Mono',monospace;${e.drive>0?'color:var(--purple);font-weight:500;':''}">${e.drive>0?fmtMins(e.drive):'—'}</td>
-      <td style="font-family:'IBM Plex Mono',monospace;${e.other>0?'color:var(--amber);font-weight:600;background:var(--amber-bg);padding:4px 8px;border-radius:3px;':''}">${e.other>0?fmtMins(e.other)+' ⚑':'—'}</td>
       <td style="font-family:'IBM Plex Mono',monospace;${e.calcOT>0?'color:var(--red);font-weight:600;':''}">${e.calcOT>0?fmtMins(e.calcOT):'—'}</td>
       <td style="font-family:'IBM Plex Mono',monospace;font-weight:700;">${fmtMins(e.total)}</td>
-      <td style="${flagCount>0?'color:var(--red);':'color:var(--green);'}font-family:'IBM Plex Mono',monospace;font-size:12px;">${flagCount>0?'⚑ '+flagCount:'✓'}</td>
+      <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;${e.timeOffDays>0?'color:#2d7a3a;font-weight:600;background:#f0f9f1;padding:6px 8px;border-radius:4px;':'color:var(--paper-dark);text-align:center;'}">${e.timeOffDays>0?e.timeOffDates.map(d=>fmtDate(d)).join(', '):'—'}</td>
+      <td style="${flagCount>0?'color:var(--red);':'color:var(--green);'}font-family:'IBM Plex Mono',monospace;">${flagCount>0?'⚑ '+flagCount:'✓'}</td>
     </tr>`;
   });
   html+=`<tr class="total-row">
     <td>TOTAL</td>
-    <td style="font-family:'IBM Plex Mono',monospace;color:var(--teal);">${totalSD>0?fmtMins(totalSD):'—'}</td>
-    <td style="font-family:'IBM Plex Mono',monospace;color:var(--amber);">${totalNE>0?fmtMins(totalNE):'—'}</td>
-    <td style="font-family:'IBM Plex Mono',monospace;color:var(--purple);">${totalDrive>0?fmtMins(totalDrive):'—'}</td>
-    <td style="font-family:'IBM Plex Mono',monospace;color:var(--amber);">${totalOther>0?fmtMins(totalOther):'—'}</td>
-    <td style="font-family:'IBM Plex Mono',monospace;color:var(--red);">${totalCalcOT>0?fmtMins(totalCalcOT):'—'}</td>
+    <td style="font-family:'IBM Plex Mono',monospace;">${totalSD>0?fmtMins(totalSD):'—'}</td>
+    <td style="font-family:'IBM Plex Mono',monospace;">${totalNE>0?fmtMins(totalNE):'—'}</td>
+    <td style="font-family:'IBM Plex Mono',monospace;">${totalDrive>0?fmtMins(totalDrive):'—'}</td>
+    <td style="font-family:'IBM Plex Mono',monospace;">${totalCalcOT>0?fmtMins(totalCalcOT):'—'}</td>
     <td style="font-family:'IBM Plex Mono',monospace;font-weight:700;">${fmtMins(grand)}</td>
-    <td></td>
+    <td></td><td></td>
   </tr></tbody></table></div></div></div>`;
 
   // Category cards
-  html+=`<div class="section"><div class="section-header"><span class="section-title">Hours by category</span></div><div class="state-grid">`;
-  const makeCard=(title,cls,color,dataArr,total)=>{
-    let c=`<div class="state-card"><div class="state-card-header ${cls}">${title}</div><div class="state-card-body">`;
-    if(dataArr.length){
-      dataArr.sort((a,b)=>b[1]-a[1]).forEach(([n,m])=>{c+=`<div class="state-row"><span class="state-name">${n}</span><span class="state-hrs" style="color:${color};">${fmtMins(m)}</span></div>`;});
+  const makeCard=(title,cls,color,rows,total)=>{
+    let c=`<div class="state-card"><div class="state-card-header ${cls}">${title}</div>`;
+    if(rows.filter(r=>r[1]>0).length){
+      c+=`<div>`;
+      rows.filter(r=>r[1]>0).sort((a,b)=>b[1]-a[1]).forEach(([n,m])=>{c+=`<div class="state-row"><span class="state-name">${n}</span><span class="state-hrs" style="color:${color};">${fmtMins(m)}</span></div>`;});
       c+=`</div><div class="state-total-row"><span class="state-total-label">Total</span><span class="state-total-val" style="color:${color};">${fmtMins(total)}</span></div>`;
     } else {
-      c+=`<div style="padding:16px;text-align:center;font-size:12px;color:var(--ink-light);">None this period</div></div>`;
+      c+=`<div style="padding:14px;text-align:center;font-size:12px;color:var(--ink-light);">None this period</div>`;
     }
-    c+='</div>';
-    return c;
+    return c+'</div>';
   };
-  const names2=[...new Set(shifts.map(s=>s.name))].sort();
-  html+=makeCard('South Dakota hours','sd','var(--teal)',names2.map(n=>[n,empOT[n].sd]).filter(x=>x[1]>0),totalSD);
-  html+=makeCard('Nebraska hours','ne','var(--amber)',names2.map(n=>[n,empOT[n].ne]).filter(x=>x[1]>0),totalNE);
-  html+=makeCard('Drive time (separate wage)','drive','var(--purple)',names2.map(n=>[n,empOT[n].drive]).filter(x=>x[1]>0),totalDrive);
-  html+=makeCard('Calculated overtime','ot','var(--red)',names2.map(n=>[n,empOT[n].calcOT]).filter(x=>x[1]>0),totalCalcOT);
+  html+=`<div class="section"><div class="section-header"><span class="section-title">By category</span></div><div class="state-grid">`;
+  html+=makeCard('South Dakota','sd','var(--teal)',names.map(n=>[n,empOT[n].sd]),totalSD);
+  html+=makeCard('Nebraska','ne','var(--amber)',names.map(n=>[n,empOT[n].ne]),totalNE);
+  html+=makeCard('Drive time','drive','var(--purple)',names.map(n=>[n,empOT[n].drive]),totalDrive);
+  html+=makeCard('Overtime','ot','var(--red)',names.map(n=>[n,empOT[n].calcOT]),totalCalcOT);
   html+=`</div></div>`;
-
   document.getElementById('breakdown-content').innerHTML=html;
-  // Update checklist metrics
-  document.getElementById('cl-hours').textContent=fmtMins(grand);
-  document.getElementById('cl-sd').textContent=fmtMins(totalSD)||'—';
-  document.getElementById('cl-ne').textContent=fmtMins(totalNE)||'—';
-  document.getElementById('cl-drive').textContent=fmtMins(totalDrive)||'—';
-  document.getElementById('cl-ot').textContent=totalCalcOT?fmtMins(totalCalcOT):'—';
-  document.getElementById('cl-untagged').textContent=totalOther?fmtMins(totalOther):'✓ 0';
-  document.getElementById('cl-flags').textContent=flags.length;
-  document.getElementById('cl-summary').style.display='grid';
 }
 
-// ── OT CHECK TAB ──
+// ── OT CHECK ──
 function renderOTCheck(){
   const names=[...new Set(shifts.map(s=>s.name))].sort();
-  let html=`<div class="info-note">
-    OT RULES: SD + NE hours only count toward the 40-hr weekly threshold · Drive time excluded · Untagged hours auto-counted as OT<br>
-    ✓ GREEN = Buildertrend OT matches calculated OT (within 15 min) · ⚑ RED = discrepancy — verify before paying
-  </div>
-  <div class="section"><div class="section-header"><span class="section-title">Weekly OT verification per employee</span></div>
-  <div class="card-wrap"><div class="shift-wrap"><table class="data-table">
+  let html=`<div class="info-note">OT = SD+NE over ${document.getElementById('t-ot').value} hrs/week · Drive time excluded · Time off excluded · ✓ green = BT matches calc · ⚑ red = discrepancy</div>
+  <div class="section"><div class="section-header"><span class="section-title">Weekly OT verification</span></div>
+  <div class="card-wrap"><div class="shift-wrap"><table class="data-table" style="min-width:700px;">
     <thead><tr>
-      <th>Employee</th><th>Week</th>
-      <th>SD+NE hrs</th><th>Drive hrs</th>
-      <th>Untagged hrs</th>
-      <th>Reg OT (>40)</th>
-      <th>Untagged OT</th>
-      <th>Calc Total OT</th>
-      <th>BT Reported OT</th>
-      <th>Match?</th>
+      <th>Employee</th><th>Week</th><th>SD hrs</th><th>NE hrs</th><th>Drive hrs</th>
+      <th>Calc OT</th><th>BT Reported OT</th><th>Match</th>
     </tr></thead><tbody>`;
-
   names.forEach(name=>{
     const e=empOT[name];
     e.weekDetail.forEach((wd,wi)=>{
-      const calcTotalOT=wd.calcOT;
-      const btOT=wi===0?e.reportedOT:0; // only show BT total on first week row
-      const isLastWeek=wi===e.weekDetail.length-1;
-      // For match check compare per week reported vs calc (BT doesn't break down by week so just flag at employee level)
-      const showMatch=wi===0;
-      const match=e.reportedOT===0&&e.calcOT===0?'ok':Math.abs(e.reportedOT-e.calcOT)<=15?'ok':'warn';
-      const rowCls=showMatch?(match==='ok'?'ot-check-row-ok':'ot-check-row-warn'):'';
-      html+=`<tr class="${rowCls}">
+      const showBT=wi===0;
+      const match=showBT?(e.reportedOT===0&&e.calcOT===0?'ok':Math.abs(e.reportedOT-e.calcOT)<=15?'ok':'warn'):'';
+      const rowStyle=showBT&&match==='ok'?'background:var(--green-bg);':showBT&&match==='warn'?'background:var(--red-bg);':'';
+      html+=`<tr style="${rowStyle}">
         <td style="font-weight:${wi===0?'500':'300'};color:${wi===0?'var(--ink)':'var(--ink-light)'};">${wi===0?name:'↳'}</td>
         <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;">${wd.wk}</td>
-        <td style="font-family:'IBM Plex Mono',monospace;">${fmtMins(wd.sdne)}</td>
-        <td style="font-family:'IBM Plex Mono',monospace;color:var(--purple);">${wd.drive>0?fmtMins(wd.drive):'—'}</td>
-        <td style="font-family:'IBM Plex Mono',monospace;${wd.untagged>0?'color:var(--amber);font-weight:600;':''}">${wd.untagged>0?fmtMins(wd.untagged)+' ⚑':'—'}</td>
-        <td style="font-family:'IBM Plex Mono',monospace;${wd.regularOT>0?'color:var(--red);':''}">${wd.regularOT>0?fmtMins(wd.regularOT):'—'}</td>
-        <td style="font-family:'IBM Plex Mono',monospace;${wd.untagged>0?'color:var(--red);font-weight:600;':''}">${wd.untagged>0?fmtMins(wd.untagged):'—'}</td>
-        <td style="font-family:'IBM Plex Mono',monospace;font-weight:600;${calcTotalOT>0?'color:var(--red);':''}">${calcTotalOT>0?fmtMins(calcTotalOT):'—'}</td>
-        <td style="font-family:'IBM Plex Mono',monospace;${showMatch&&e.reportedOT>0?'color:var(--ink-mid);':'color:var(--ink-light);'}">${showMatch?(e.reportedOT>0?fmtMins(e.reportedOT):'0:00'):'—'}</td>
-        <td style="font-size:14px;">${showMatch?(match==='ok'?'<span style="color:var(--green);">✓</span>':'<span style="color:var(--red);font-weight:600;">⚑</span>'):'—'}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;${wd.sdMins>0?'color:var(--teal);':''}">${wd.sdMins>0?fmtMins(wd.sdMins):'—'}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;${wd.neMins>0?'color:var(--amber);':''}">${wd.neMins>0?fmtMins(wd.neMins):'—'}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;${wd.drive>0?'color:var(--purple);':''}">${wd.drive>0?fmtMins(wd.drive):'—'}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;font-weight:600;${wd.calcOT>0?'color:var(--red);':''}">${wd.calcOT>0?fmtMins(wd.calcOT):'—'}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;">${showBT?(e.reportedOT>0?fmtMins(e.reportedOT):'0:00'):'—'}</td>
+        <td>${showBT?(match==='ok'?'<span style="color:var(--green);font-size:16px;">✓</span>':'<span style="color:var(--red);font-size:16px;font-weight:700;">⚑</span>'):'—'}</td>
       </tr>`;
     });
-    // Employee total row
     html+=`<tr class="total-row">
-      <td colspan="2" style="font-size:11px;">${name} — period total</td>
-      <td style="font-family:'IBM Plex Mono',monospace;">${fmtMins(e.sd+e.ne)}</td>
-      <td style="font-family:'IBM Plex Mono',monospace;color:var(--purple);">${e.drive>0?fmtMins(e.drive):'—'}</td>
-      <td style="font-family:'IBM Plex Mono',monospace;${e.other>0?'color:var(--amber);font-weight:600;':''}">${e.other>0?fmtMins(e.other):'—'}</td>
-      <td></td><td></td>
-      <td style="font-family:'IBM Plex Mono',monospace;font-weight:700;color:var(--red);">${e.calcOT>0?fmtMins(e.calcOT):'—'}</td>
+      <td colspan="2">${name} total</td>
+      <td style="font-family:'IBM Plex Mono',monospace;">${e.sd>0?fmtMins(e.sd):'—'}</td>
+      <td style="font-family:'IBM Plex Mono',monospace;">${e.ne>0?fmtMins(e.ne):'—'}</td>
+      <td style="font-family:'IBM Plex Mono',monospace;">${e.drive>0?fmtMins(e.drive):'—'}</td>
+      <td style="font-family:'IBM Plex Mono',monospace;color:var(--red);">${e.calcOT>0?fmtMins(e.calcOT):'—'}</td>
       <td style="font-family:'IBM Plex Mono',monospace;">${e.reportedOT>0?fmtMins(e.reportedOT):'—'}</td>
       <td></td>
     </tr>`;
@@ -665,26 +857,34 @@ function renderShifts(){
   const tBmin=parseInt(document.getElementById('t-break-min').value);
   const filtered=shifts.filter(s=>{
     if(empF&&s.name!==empF) return false;
-    if(stateF&&s.state!==stateF) return false;
+    if(stateF==='timeoff'&&!s.isTimeOff) return false;
+    if(stateF&&stateF!=='timeoff'&&s.state!==stateF) return false;
     if(flagF==='flagged'&&!shiftIsFlagged(s)) return false;
     if(flagF==='clean'&&shiftIsFlagged(s)) return false;
     if(search&&!s.name.toLowerCase().includes(search)&&!s.job.toLowerCase().includes(search)) return false;
     return true;
   });
-  const typeBadge=s=>s.state==='drive'?'<span class="state-badge drive-badge">Drive</span>':s.state==='SD'?'<span class="state-badge sd-badge">SD</span>':s.state==='NE'?'<span class="state-badge ne-badge">NE</span>':'<span class="state-badge untagged-badge">Untagged</span>';
+  const typeBadge=s=>{
+    if(s.isTimeOff) return '<span class="state-badge" style="background:#e8e8e8;color:#555;">Time Off</span>';
+    if(s.isPersonal) return '<span class="state-badge personal-badge">Personal</span>';
+    if(s.state==='drive') return '<span class="state-badge drive-badge">Drive</span>';
+    if(s.state==='SD') return '<span class="state-badge sd-badge">SD</span>';
+    return '<span class="state-badge ne-badge">NE</span>';
+  };
   let html=`<div class="shift-wrap"><table class="shift-table"><thead><tr>
     <th>Date</th><th>Name</th><th>Job</th><th>Type</th><th>In</th><th>Out</th><th>Break</th><th>Total</th><th>⚑</th>
   </tr></thead><tbody>`;
   filtered.forEach(s=>{
     const fl=shiftIsFlagged(s);
-    const rowCls=s.state==='drive'?'shift-drive':fl?(s.totalMins>=tEx||(s.breakMins!==null&&s.breakMins>tBmax)?'shift-flag-red':'shift-flag-amber'):'';
+    const rowCls=s.isTimeOff?'shift-personal':s.isPersonal?'shift-personal':s.state==='drive'?'shift-drive':fl?(s.totalMins>=tEx||(s.breakMins!==null&&s.breakMins>tBmax)?'shift-flag-red':'shift-flag-amber'):'';
     const dots=[];
-    if(s.totalMins!==null&&s.totalMins>=tS) dots.push(`<span class="dot dot-${s.totalMins>=tEx?'red':'amber'}"></span>`);
-    if(s.totalMins!==null&&s.totalMins>=360&&s.breakMins===null&&s.state!=='drive') dots.push('<span class="dot dot-amber"></span>');
-    if(s.breakMins!==null&&s.breakMins<tBmin&&s.totalMins>=480) dots.push('<span class="dot dot-amber"></span>');
-    if(s.breakMins!==null&&s.breakMins>tBmax) dots.push('<span class="dot dot-red"></span>');
-    if(s.state==='other'&&s.totalMins) dots.push('<span class="dot" style="background:var(--amber)"></span>');
-    if(s.edited&&s.edited.length>2) dots.push('<span class="dot dot-blue"></span>');
+    if(!s.isPersonal&&!s.isTimeOff){
+      if(s.totalMins>=tS) dots.push(`<span class="dot dot-${s.totalMins>=tEx?'red':'amber'}"></span>`);
+      if(s.totalMins>=360&&s.breakMins===null&&s.state!=='drive') dots.push('<span class="dot dot-amber"></span>');
+      if(s.breakMins!==null&&s.breakMins<tBmin&&s.totalMins>=480) dots.push('<span class="dot dot-amber"></span>');
+      if(s.breakMins!==null&&s.breakMins>tBmax) dots.push('<span class="dot dot-red"></span>');
+      if(s.edited&&s.edited.length>2) dots.push('<span class="dot dot-blue"></span>');
+    }
     html+=`<tr class="${rowCls}">
       <td style="white-space:nowrap;font-family:'IBM Plex Mono',monospace;font-size:11px;">${fmtDate(s.date)}</td>
       <td style="white-space:nowrap;font-size:12px;font-weight:500;">${s.name}</td>
@@ -693,20 +893,20 @@ function renderShifts(){
       <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;white-space:nowrap;">${s.timeIn}</td>
       <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;white-space:nowrap;">${s.timeOut}</td>
       <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;${s.breakMins>tBmax?'color:var(--red);font-weight:500;':s.breakMins!==null&&s.breakMins<tBmin&&s.totalMins>=480?'color:var(--amber);':''}">${s.breakMins!==null?fmtMins(s.breakMins):'—'}</td>
-      <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;${s.totalMins>=tS?'color:var(--red);':''}">${s.totalMins!==null?fmtMins(s.totalMins):'—'}</td>
+      <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;${s.totalMins>=tS&&!s.isPersonal?'color:var(--red);':''}">${s.totalMins!==null?fmtMins(s.totalMins):'—'}</td>
       <td>${dots.join('')}</td>
     </tr>`;
   });
   html+=`</tbody></table></div>`;
-  if(!filtered.length) html='<div class="empty"><div class="empty-title">No shifts match your filters</div></div>';
+  if(!filtered.length) html='<div class="empty"><div class="empty-title">No shifts match</div></div>';
   document.getElementById('shifts-content').innerHTML=html;
 }
 
 // ── CHECKLIST ──
 function renderChecklist(){
   const names=[...new Set(shifts.map(s=>s.name))].sort();
-  const ci=(label,sub,group)=>`
-    <div class="check-item" data-group="${group}">
+  const ci=(label,sub,grp)=>`
+    <div class="check-item" data-group="${grp}">
       <div class="check-box"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"><polyline points="1,5 4.5,9 11,1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div>
         <div class="check-label">${label}</div>
@@ -722,32 +922,32 @@ function renderChecklist(){
   let html=`
   <div class="section"><div class="section-header"><span class="section-title">Pre-review</span></div><div class="card-wrap">
     ${ci('Export covers the correct pay period','Confirm dates at the top match','pre')}
-    ${ci('All active employees are present in the export','Missing employees = possible forgotten clock-ins','pre')}
+    ${ci('All active employees are present','Missing = possible forgotten clock-ins','pre')}
+    ${ci('Missing weekday flags reviewed (Tab 02 — blue flags)','Confirm each missing day: off, personal, or missed clock-in','pre')}
+    ${ci('No General job entries remain — all updated to real job codes','General = NE for this period only — fix in Buildertrend','pre')}
   </div></div>
-  <div class="section"><div class="section-header"><span class="section-title">OT verification (Tab 04)</span></div><div class="card-wrap">
-    ${ci('All employees with untagged hours have been reviewed','Untagged hrs auto-counted as OT — confirm job labels are correct','ot')}
-    ${ci('Calculated OT matches what will be paid in QuickBooks','Cross-reference OT Check tab with what you submit','ot')}
-    ${ci('Any OT discrepancy between Buildertrend and calculated OT is resolved','Red rows in OT Check tab need explanation or correction','ot')}
-    ${ci('Drive time confirmed as separate wage — not included in OT calc','Verify Drive Time hrs in Pay Breakdown tab','ot')}
+  <div class="section"><div class="section-header"><span class="section-title">Hours summary verified (Tab 03)</span></div><div class="card-wrap">
+    ${ci('SD hours confirmed per employee','Tab 03 → SD column','hours')}
+    ${ci('NE hours confirmed per employee','Tab 03 → NE column','hours')}
+    ${ci('Drive time confirmed — separate wage rate applied','Tab 03 → Drive column','hours')}
+    ${ci('SD+NE+OT totals match what will be submitted','Tab 03 → SD+NE+OT total column','hours')}
   </div></div>
-  <div class="section"><div class="section-header"><span class="section-title">Pay breakdown verified (Tab 03)</span></div><div class="card-wrap">
-    ${ci('SD hours confirmed per employee','Pay Breakdown tab → SD column','pay')}
-    ${ci('NE hours confirmed per employee','Pay Breakdown tab → NE column','pay')}
-    ${ci('Drive time confirmed per employee — separate wage applied','Pay Breakdown tab → Drive column','pay')}
-    ${ci('No remaining untagged hours — all jobs labeled SD or NE','Untagged column should be blank or zero','pay')}
+  <div class="section"><div class="section-header"><span class="section-title">OT verified (Tab 05)</span></div><div class="card-wrap">
+    ${ci('All OT discrepancies between Buildertrend and calculated resolved','Red rows in OT Check tab need resolution','ot')}
+    ${ci('Time off entries reviewed — confirm each Administration entry is a real day off','Time off is excluded from all hour totals and OT calc','ot')}
   </div></div>
-  <div class="section"><div class="section-header"><span class="section-title">Auto-flags resolved (Tab 02)</span></div><div class="card-wrap">
-    ${ci('All red-priority flags cleared or documented','Extreme shifts, OT discrepancies, long breaks','flags')}
-    ${ci('All amber review items addressed','Long shifts, short breaks, untagged hours','flags')}
-    ${ci('All self-edited entries spot-checked','Info items in flags tab','flags')}
+  <div class="section"><div class="section-header"><span class="section-title">Auto-flags cleared (Tab 02)</span></div><div class="card-wrap">
+    ${ci('All red-priority flags cleared or documented','Extreme shifts, long breaks, OT discrepancies','flags')}
+    ${ci('All amber review items addressed','Long shifts, short/missing breaks, General jobs','flags')}
+    ${ci('All self-edited entries spot-checked','Blue info flags','flags')}
   </div></div>
   <div class="section"><div class="section-header"><span class="section-title">Per-employee sign-off</span></div><div class="card-wrap">`+
-  names.map(n=>ci(n+' — SD/NE split, drive time, and OT approved','',  'emp')).join('')+
+  names.map(n=>ci(n+' — SD/NE split, drive time, and OT approved','','emp')).join('')+
   `</div></div>
   <div class="section"><div class="section-header"><span class="section-title">Final submission</span></div><div class="card-wrap">
-    ${ci('Job labels updated in Buildertrend for any untagged entries','Prevents untagged OT issue next period','final')}
-    ${ci('All flagged items resolved or have a written explanation','','final')}
-    ${ci('Payroll submitted with correct wage rates: SD reg, NE reg, Drive, OT','','final')}
+    ${ci('Job labels updated in Buildertrend for any General entries','','final')}
+    ${ci('All flagged items resolved or have a written note','','final')}
+    ${ci('Payroll submitted: SD reg · NE reg · Drive · OT rates applied correctly','','final')}
   </div></div>`;
   document.getElementById('checklist-content').innerHTML=html;
   updateProgress();
@@ -770,23 +970,227 @@ function updateProgress(){
   if(rev===total&&total>0){const n=new Date();document.getElementById('cl-stamp').textContent='Completed '+n.toLocaleDateString()+' '+n.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});}
 }
 
-// ── SAMPLE ──
+// ── DOUBLE-RUN VERIFICATION ──
+let run1Snapshot = null;
+
+function snapshotRun(){
+  // Capture all per-employee totals for comparison
+  const names=[...new Set(shifts.map(s=>s.name))].sort();
+  const snap={
+    ts: new Date().toLocaleString(),
+    totalShifts: shifts.length,
+    names,
+    data: {}
+  };
+  names.forEach(n=>{
+    const e=empOT[n];
+    snap.data[n]={sd:e.sd,ne:e.ne,drive:e.drive,calcOT:e.calcOT,total:e.total,sdne:e.sd+e.ne};
+  });
+  snap.totals={
+    sd: names.reduce((a,n)=>a+empOT[n].sd,0),
+    ne: names.reduce((a,n)=>a+empOT[n].ne,0),
+    drive: names.reduce((a,n)=>a+empOT[n].drive,0),
+    calcOT: names.reduce((a,n)=>a+empOT[n].calcOT,0),
+    shifts: shifts.length,
+  };
+  return snap;
+}
+
+function lockRun1(){
+  if(!shifts.length){alert('Import data first before locking Run 1.');return;}
+  run1Snapshot=snapshotRun();
+  renderVerifyTab();
+}
+
+function runVerification(){
+  if(!shifts.length){alert('Import data again for Run 2 first.');return;}
+  if(!run1Snapshot){alert('Lock Run 1 first.');return;}
+  const run2=snapshotRun();
+  renderVerifyComparison(run1Snapshot, run2);
+}
+
+function renderVerifyTab(){
+  let html=`
+  <div class="info-note">
+    VERIFICATION PROCESS: 1) Import data → review all tabs → click "Lock Run 1" below · 2) Re-import the same Buildertrend file → click "Run Verification" · 3) Tool compares both runs and flags any differences
+  </div>
+  <div style="display:flex;gap:12px;margin-bottom:2rem;flex-wrap:wrap;align-items:center;">
+    <button class="btn-main" onclick="lockRun1()">🔒 Lock Run 1</button>
+    <button class="btn-outline" onclick="switchTab('import')">↩ Go re-import for Run 2</button>
+    ${run1Snapshot?'<button class="btn-main" style="background:var(--green);border-color:var(--green);" onclick="runVerification()">✓ Run Verification</button>':''}
+  </div>`;
+
+  if(!run1Snapshot){
+    html+=`<div class="card-wrap" style="padding:2rem;text-align:center;color:var(--ink-light);">
+      <div style="font-size:36px;margin-bottom:12px;opacity:.3;">🔒</div>
+      <div style="font-size:14px;font-weight:500;color:var(--ink-mid);margin-bottom:6px;">No Run 1 locked yet</div>
+      <div style="font-size:12px;">Import your data, review all tabs, then click "Lock Run 1" above.</div>
+    </div>`;
+  } else {
+    html+=`<div class="section"><div class="section-header"><span class="section-title">Run 1 — locked</span><span class="flag-count">${run1Snapshot.ts}</span></div>
+    <div class="card-wrap"><div class="shift-wrap"><table class="hours-table" style="min-width:500px;">
+      <thead><tr><th>Employee</th><th style="color:var(--teal);">SD</th><th style="color:var(--amber);">NE</th><th style="color:var(--purple);">Drive</th><th style="color:var(--red);">Calc OT</th><th>SD+NE</th><th>Total</th></tr></thead>
+      <tbody>`;
+    run1Snapshot.names.forEach(n=>{
+      const d=run1Snapshot.data[n];
+      html+=`<tr>
+        <td style="font-weight:500;">${n}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;color:var(--teal);">${fmtMins(d.sd)}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;color:var(--amber);">${fmtMins(d.ne)}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;color:var(--purple);">${d.drive>0?fmtMins(d.drive):'—'}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;color:var(--red);">${d.calcOT>0?fmtMins(d.calcOT):'—'}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;font-weight:600;">${fmtMins(d.sdne)}</td>
+        <td style="font-family:'IBM Plex Mono',monospace;">${fmtMins(d.total)}</td>
+      </tr>`;
+    });
+    html+=`<tr class="total-row">
+      <td>TOTAL</td>
+      <td style="font-family:'IBM Plex Mono',monospace;">${fmtMins(run1Snapshot.totals.sd)}</td>
+      <td style="font-family:'IBM Plex Mono',monospace;">${fmtMins(run1Snapshot.totals.ne)}</td>
+      <td style="font-family:'IBM Plex Mono',monospace;">${fmtMins(run1Snapshot.totals.drive)}</td>
+      <td style="font-family:'IBM Plex Mono',monospace;">${fmtMins(run1Snapshot.totals.calcOT)}</td>
+      <td style="font-family:'IBM Plex Mono',monospace;">${fmtMins(run1Snapshot.totals.sd+run1Snapshot.totals.ne)}</td>
+      <td style="font-family:'IBM Plex Mono',monospace;">${fmtMins(run1Snapshot.totals.sd+run1Snapshot.totals.ne+run1Snapshot.totals.drive)}</td>
+    </tr></tbody></table></div></div></div>
+    <div class="info-note" style="color:var(--green);">✓ Run 1 locked at ${run1Snapshot.ts} · ${run1Snapshot.totalShifts} shifts · Now re-import the same file and click "Run Verification"</div>`;
+  }
+  document.getElementById('verify-content').innerHTML=html;
+}
+
+function renderVerifyComparison(r1, r2){
+  const allNames=[...new Set([...r1.names,...r2.names])].sort();
+  const fields=['sd','ne','drive','calcOT'];
+  const fieldLabels={'sd':'SD','ne':'NE','drive':'Drive','calcOT':'Calc OT'};
+  const fieldColors={'sd':'var(--teal)','ne':'var(--amber)','drive':'var(--purple)','calcOT':'var(--red)'};
+  let diffs=[];
+
+  // Check employee-level diffs
+  allNames.forEach(name=>{
+    const d1=r1.data[name]||{sd:0,ne:0,drive:0,calcOT:0,total:0,sdne:0};
+    const d2=r2.data[name]||{sd:0,ne:0,drive:0,calcOT:0,total:0,sdne:0};
+    fields.forEach(f=>{
+      if(Math.abs((d1[f]||0)-(d2[f]||0))>1){
+        diffs.push({name,field:f,r1:d1[f]||0,r2:d2[f]||0,diff:(d2[f]||0)-(d1[f]||0)});
+      }
+    });
+  });
+
+  // Check shift count
+  if(r1.totalShifts!==r2.totalShifts){
+    diffs.push({name:'TOTAL',field:'shifts',r1:r1.totalShifts,r2:r2.totalShifts,diff:r2.totalShifts-r1.totalShifts});
+  }
+
+  const verified=diffs.length===0;
+  let html='';
+
+  if(verified){
+    html+=`<div style="text-align:center;padding:3rem 1rem;">
+      <div style="font-size:64px;margin-bottom:16px;">✅</div>
+      <div style="font-size:22px;font-weight:500;color:var(--green);margin-bottom:8px;">Both runs match — verified</div>
+      <div style="font-size:13px;color:var(--ink-light);margin-bottom:24px;">Run 1 and Run 2 produced identical totals for all employees. Safe to submit payroll.</div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-light);">Run 1: ${r1.ts} · Run 2: ${r2.ts}</div>
+    </div>`;
+  } else {
+    html+=`<div style="text-align:center;padding:2rem 1rem 1.5rem;">
+      <div style="font-size:48px;margin-bottom:12px;">⚑</div>
+      <div style="font-size:18px;font-weight:500;color:var(--red);margin-bottom:6px;">${diffs.length} discrepanc${diffs.length===1?'y':'ies'} found — do not submit</div>
+      <div style="font-size:13px;color:var(--ink-light);">The two runs produced different results. Review each discrepancy below before paying.</div>
+    </div>
+    <div class="section"><div class="section-header"><span class="section-title">Discrepancies</span><span class="flag-count">${diffs.length}</span></div>`;
+    diffs.forEach(d=>{
+      const isIncrease=d.diff>0;
+      html+=`<div class="flag-row sev-red" style="margin-bottom:6px;">
+        <div class="flag-name">${d.name} — ${d.field==='shifts'?'Shift count':fieldLabels[d.field]+' hours'}</div>
+        <span class="badge badge-red">${isIncrease?'+':''}${d.field==='shifts'?d.diff+' shifts':fmtMins(Math.abs(d.diff))+' hrs '+(isIncrease?'more':'less')}</span>
+        <div class="flag-detail">Run 1: <strong>${d.field==='shifts'?d.r1:fmtMins(d.r1)}</strong> → Run 2: <strong>${d.field==='shifts'?d.r2:fmtMins(d.r2)}</strong> · Investigate before submitting payroll.</div>
+        <div class="flag-actions">
+          <button class="btn-sm ok" onclick="resolveFlag(this,'ok')">✓ Investigated & OK</button>
+          <button class="btn-sm flag-btn" onclick="resolveFlag(this,'flag')">⚑ Still unresolved</button>
+          <button class="btn-sm" onclick="toggleFN(this)">+ Note</button>
+        </div>
+        <textarea class="flag-note" placeholder="Explain the discrepancy..."></textarea>
+      </div>`;
+    });
+    html+=`</div>`;
+  }
+
+  // Side-by-side table
+  html+=`<div class="section"><div class="section-header"><span class="section-title">Side-by-side comparison</span></div>
+  <div class="card-wrap"><div class="shift-wrap"><table class="hours-table" style="min-width:650px;">
+    <thead><tr>
+      <th>Employee</th>
+      <th colspan="2" style="text-align:center;background:var(--paper-mid);">SD hrs</th>
+      <th colspan="2" style="text-align:center;background:var(--paper-mid);">NE hrs</th>
+      <th colspan="2" style="text-align:center;background:var(--paper-mid);">Drive hrs</th>
+      <th colspan="2" style="text-align:center;background:var(--paper-mid);">Calc OT</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th style="color:var(--teal);">Run 1</th><th style="color:var(--teal);">Run 2</th>
+      <th style="color:var(--amber);">Run 1</th><th style="color:var(--amber);">Run 2</th>
+      <th style="color:var(--purple);">Run 1</th><th style="color:var(--purple);">Run 2</th>
+      <th style="color:var(--red);">Run 1</th><th style="color:var(--red);">Run 2</th>
+    </tr></thead><tbody>`;
+
+  allNames.forEach(name=>{
+    const d1=r1.data[name]||{sd:0,ne:0,drive:0,calcOT:0};
+    const d2=r2.data[name]||{sd:0,ne:0,drive:0,calcOT:0};
+    const diff=f=>Math.abs((d1[f]||0)-(d2[f]||0))>1;
+    const cell=(v,f,run)=>`<td style="font-family:'IBM Plex Mono',monospace;${diff(f)?'font-weight:700;background:var(--red-bg);color:var(--red);':''}">${fmtMins(v)}</td>`;
+    html+=`<tr>
+      <td style="font-weight:500;">${name}</td>
+      ${cell(d1.sd,'sd',1)}${cell(d2.sd,'sd',2)}
+      ${cell(d1.ne,'ne',1)}${cell(d2.ne,'ne',2)}
+      ${cell(d1.drive,'drive',1)}${cell(d2.drive,'drive',2)}
+      ${cell(d1.calcOT,'calcOT',1)}${cell(d2.calcOT,'calcOT',2)}
+    </tr>`;
+  });
+
+  // Totals row
+  const t1f=f=>allNames.reduce((a,n)=>a+((r1.data[n]||{})[f]||0),0);
+  const t2f=f=>allNames.reduce((a,n)=>a+((r2.data[n]||{})[f]||0),0);
+  html+=`<tr class="total-row">
+    <td>TOTAL</td>
+    <td>${fmtMins(t1f('sd'))}</td><td>${fmtMins(t2f('sd'))}</td>
+    <td>${fmtMins(t1f('ne'))}</td><td>${fmtMins(t2f('ne'))}</td>
+    <td>${fmtMins(t1f('drive'))}</td><td>${fmtMins(t2f('drive'))}</td>
+    <td>${fmtMins(t1f('calcOT'))}</td><td>${fmtMins(t2f('calcOT'))}</td>
+  </tr></tbody></table></div></div></div>`;
+
+  html+=`<div style="display:flex;gap:12px;margin-top:1rem;flex-wrap:wrap;">
+    <button class="btn-outline" onclick="lockRun1();renderVerifyTab();">🔒 Re-lock as new Run 1</button>
+    <button class="btn-outline" onclick="switchTab('import')">↩ Re-import for another run</button>
+  </div>`;
+
+  document.getElementById('verify-content').innerHTML=`
+    <div class="info-note">Run 1 locked: ${r1.ts} · Run 2 completed: ${r2.ts}</div>
+    ${html}`;
+}
+
+// ── SAMPLE DATA ──
 function loadSample(){
-  document.getElementById('paste-input').value=`Date\tJob\tName\tTags\tTime In\tTime Out\tBreak Time\tRegular Time\tOT\tPTO\tTotal Work Time\tEdited\tApproved Status\tCost Rate\tBuilder Cost\tCost Codes\tCreated By\tNotes\tRelated Invoices\tActual Time In\tActual Time Out
-5/8/2026\tGarret and Sam Leonard - SD\tRiley Barber\t\t7:30 AM\t1:41 PM\t00:15\t05:56\t\t\t05:56\t\tPending\t0\t0\t\tRiley Barber\t\t\t\t
-5/7/2026\tGarret and Sam Leonard - SD\tRiley Barber\t\t6:30 AM\t6:45 PM\t00:31\t11:44\t\t\t11:44\t\tPending\t0\t0\t\tRiley Barber\t\t\t\t
-5/6/2026\tShop Remodel - SD\tRiley Barber\t\t7:00 AM\t6:56 PM\t00:30\t11:26\t\t\t11:26\t\tPending\t0\t0\t\tRiley Barber\t\t\t\t
-5/5/2026\tShop Remodel - SD\tRiley Barber\t\t10:00 AM\t6:45 PM\t00:30\t08:15\t\t\t08:15\t\tPending\t0\t0\t\tRiley Barber\t\t\t\t
-5/8/2026\tTim Kehr - NE\tJosh Barber\t\t6:30 AM\t9:30 PM\t\t15:00\t\t\t15:00\tTime Out Modified by: Josh Barber May 10 2026\tPending\t0\t0\t\tJosh Barber\t\t\t\t
-5/7/2026\tTim Kehr - NE\tJosh Barber\t\t5:30 AM\t11:39 PM\t\t18:09\t\t\t18:09\t\tPending\t0\t0\t\tJosh Barber\tRapid city permits\t\t\t
-5/7/2026\tDrive Time\tCarter Johaneson\t\t6:00 AM\t9:00 AM\t\t03:00\t\t\t03:00\t\tPending\t0\t0\t\tCarter Johaneson\t\t\t\t
-5/7/2026\tGarret and Sam Leonard - SD\tCarter Johaneson\t\t9:00 AM\t7:15 PM\t00:40\t09:35\t\t\t09:35\t\tPending\t0\t0\t\tCarter Johaneson\t\t\t\t
-5/6/2026\tShop Remodel - SD\tCarter Johaneson\t\t7:00 AM\t6:22 PM\t00:37\t11:05\t\t\t11:05\t\tPending\t0\t0\t\tCarter Johaneson\t\t\t\t
-5/5/2026\tGeneral JBar work\tCarter Johaneson\t\t8:00 AM\t4:00 PM\t00:30\t07:30\t\t\t07:30\t\tPending\t0\t0\t\tCarter Johaneson\t\t\t\t
-5/4/2026\tDrive Time\tTom Skoglund\t\t4:00 AM\t8:00 AM\t\t04:00\t\t\t04:00\t\tPending\t0\t0\t\tTom Skoglund\t\t\t\t
-5/4/2026\tShop Remodel - SD\tTom Skoglund\t\t8:00 AM\t5:30 PM\t00:30\t09:00\t\t\t09:00\t\tPending\t0\t0\t\tTom Skoglund\t\t\t\t
-5/3/2026\tShop Remodel - SD\tTom Skoglund\t\t7:00 AM\t6:30 PM\t00:30\t11:00\t\t\t11:00\t\tPending\t0\t0\t\tTom Skoglund\t\t\t\t
-5/1/2026\tShop Remodel - SD\tTom Skoglund\t\t7:00 AM\t3:45 PM\t00:30\t08:15\t\t\t08:15\t\tPending\t0\t0\t\tTom Skoglund\t\t\t\t`;
+  document.getElementById('paste-input').value=`Date\tJob\tName\tTags\tTime In\tTime Out\tBreak Time\tRegular Time\tOT\tPTO\tTotal Work Time\tEdited\tApproved Status
+Thursday, May 14, 2026\tNE-Small Concrete Jobs\tJeff Goeden\t\t7:30 AM\t5:15 PM\t00:43\t09:02\t\t\t09:02\t\tPending
+Wednesday, May 13, 2026\tNE-darnell loop\tJeff Goeden\t\t7:29 AM\t6:45 PM\t00:26\t10:50\t\t\t10:50\tTime In Modified by: Jeff Goeden May 13 2026\tPending
+Tuesday, May 12, 2026\tNE-Small Concrete Jobs\tJeff Goeden\t\t7:45 PM\t10:00 PM\t\t02:15\t\t\t02:15\t\tPending
+Tuesday, May 12, 2026\tNE-Gutters\tJeff Goeden\t\t4:00 PM\t6:30 PM\t\t02:30\t\t\t02:30\t\tPending
+Tuesday, May 12, 2026\tNE-Shop Remodel\tJeff Goeden\t\t8:30 AM\t4:00 PM\t00:31\t06:59\t\t\t06:59\t\tPending
+Tuesday, May 12, 2026\tNE-Shop Remodel\tJeff Goeden\t\t7:30 AM\t8:30 AM\t\t01:00\t\t\t01:00\t\tPending
+Monday, May 11, 2026\tNE-darnell loop\tJeff Goeden\t\t9:00 AM\t7:00 PM\t00:46\t09:14\t\t\t09:14\t\tPending
+Monday, May 11, 2026\tNE-Shop Remodel\tJeff Goeden\t\t8:15 AM\t9:00 AM\t\t00:45\t\t\t00:45\t\tPending
+Monday, May 11, 2026\tNE-Drive Time\tJeff Goeden\t\t5:45 AM\t8:00 AM\t\t02:15\t\t\t02:15\t\tPending
+Thursday, May 14, 2026\tSD-Valentine Shop\tRiley Barber\t\t7:00 AM\t5:30 PM\t00:30\t10:00\t\t\t10:00\t\tPending
+Wednesday, May 13, 2026\tSD-Valentine Shop\tRiley Barber\t\t7:00 AM\t6:00 PM\t00:30\t10:30\t\t\t10:30\t\tPending
+Tuesday, May 12, 2026\tSD-Valentine Shop\tRiley Barber\t\t7:00 AM\t5:30 PM\t00:30\t10:00\t\t\t10:00\t\tPending
+Monday, May 11, 2026\tSD-Valentine Shop\tRiley Barber\t\t7:00 AM\t5:00 PM\t00:30\t09:30\t\t\t09:30\t\tPending
+Thursday, May 14, 2026\tGeneral JBar work\tCarter Johaneson\t\t8:00 AM\t12:00 PM\t\t04:00\t\t\t04:00\t\tPending
+Wednesday, May 13, 2026\tNE-Valentine Shop\tCarter Johaneson\t\t7:30 AM\t6:00 PM\t00:30\t10:00\t\t\t10:00\t\tPending
+Tuesday, May 12, 2026\tNE-Valentine Shop\tCarter Johaneson\t\t7:30 AM\t5:00 PM\t00:30\t09:00\t\t\t09:00\t\tPending
+Monday, May 11, 2026\tNE-Valentine Shop\tCarter Johaneson\t\t7:30 AM\t5:30 PM\t00:30\t09:30\t\t\t09:30\t\tPending
+Monday, May 11, 2026\tPersonal Day\tBen Deweerd\t\t8:00 AM\t8:00 AM\t\t00:01\t\t\t00:01\t\tPending
+Tuesday, May 12, 2026\tSD-Valentine Shop\tBen Deweerd\t\t7:00 AM\t5:30 PM\t00:30\t10:00\t\t\t10:00\t\tPending
+Friday, May 15, 2026\tSD-Administration\tTom Skoglund\t\t8:00 AM\t8:01 AM\t\t\t\t\t00:01\t\tPending
+Thursday, May 14, 2026\tNE-darnell loop\tTom Skoglund\t\t7:00 AM\t5:00 PM\t00:30\t09:30\t\t\t09:30\t\tPending`;
 }
 </script>
 </body>
